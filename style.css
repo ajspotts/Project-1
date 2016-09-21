@@ -5,15 +5,8 @@ body {
 .title {
   font-size: 70px;
   text-align: center;
+  margin: 25px auto;
 }
-
-/*.outer-circle {
-  background: black;
-  border-radius: 50%;
-  height: 700px;
-  width: 700px;
-  position: relative;
-}*/
 
 .control {
   display: flex;
@@ -24,11 +17,12 @@ body {
   width: 600px;
   height: 600px;
   margin:auto;
+  position: relative;
 }
 
 .panel {
-  border: 5px solid black;
-  border-radius: 40px;
+  border: 10px solid black;
+  /*border-radius: 40px;*/
   display: inline-block;
   width: 50%;
   height: 50%;
@@ -37,30 +31,51 @@ body {
 
 .green {
   background-color: #0CF72B;
-}
-
-.red {
-  background-color: #FF0000;
+  /*height:150px;
+  width: 150px;*/
+  -moz-border-radius: 100% 0 0 0;
+  border-radius: 100% 0 0 0;
 }
 
 .yellow {
   background-color: #EEFF00;
+  /*height:150px;
+  width: 150px;*/
+  -moz-border-radius: 0 100% 0 0;
+  border-radius: 0 100% 0 0;
 }
+
+.red {
+  background-color: #FF0000;
+  /*height:150px;
+  width: 150px;*/
+  -moz-border-radius: 0 0 0 100%;
+  border-radius: 0 0 0 100%;
+}
+
+
 .blue {
   background-color: #0050FF;
+  /*height:150px;
+  width: 150px;*/
+  -moz-border-radius: 0 0 100% 0;
+  border-radius: 0 0 100% 0;
 }
 
 button {
   color: white;
   background-color: black;
-  border-radius: 50px;
+  border-radius: 100%;
   font-size: 15px;
   display: block;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 150px;
-  margin:auto;
-  position:relative;
-  bottom: 375px;
+  width: 20%;
+  height: 20%;
+  /*margin:auto;*/
+  position:absolute;
+  bottom: 40%;
+  left:40%;
+  z-index: 1;
+  box-sizing: border-box;
 }
