@@ -1,3 +1,8 @@
+button {
+  
+}
+
+
 .panel {
 background-color: #6C9A74;
 border: 1px solid #295A33;
@@ -17,18 +22,18 @@ width: 700px;
 height: 700px;
 }
 
-#green{
+.green{
 background-color: green;
 }
 
-#red{
+.red{
 background-color: red;
 }
 
-#blue {
+.blue {
 background-color: blue;
 }
 
-#yellow {
+.yellow {
 background-color: yellow;
 }
