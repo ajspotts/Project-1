@@ -3,18 +3,17 @@ body {
 }
 
 .title {
-  font-size: 60px;
+  font-size: 70px;
   text-align: center;
 }
 
-.panel {
-  border: 1px solid #295A33;
-  border-radius: 15px;
-  display: inline-block;
-  width: 50%;
-  height: 50%;
-  box-sizing: border-box;
-}
+/*.outer-circle {
+  background: black;
+  border-radius: 50%;
+  height: 700px;
+  width: 700px;
+  position: relative;
+}*/
 
 .control {
   display: flex;
@@ -27,20 +26,28 @@ body {
   margin:auto;
 }
 
-.green{
+.panel {
+  border: 5px solid black;
+  border-radius: 40px;
+  display: inline-block;
+  width: 50%;
+  height: 50%;
+  box-sizing: border-box;
+}
+
+.green {
   background-color: #0CF72B;
 }
 
-.red{
+.red {
   background-color: #FF0000;
-}
-
-.blue {
-  background-color: #0050FF;
 }
 
 .yellow {
   background-color: #EEFF00;
+}
+.blue {
+  background-color: #0050FF;
 }
 
 button {
@@ -51,9 +58,9 @@ button {
   display: block;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   margin:auto;
   position:relative;
-  bottom: 350px;
+  bottom: 375px;
 }

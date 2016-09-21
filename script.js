@@ -33,27 +33,27 @@ function displayPattern() {
       var identifier = randomFlashingPattern[i];
       switch (identifier) {
         case 1:
-          $(green).css("background-color", "white");
+          $(green).css("background-color", "#white");
           setTimeout(function(){
-            $(green).css("background-color", "green");
+            $(green).css("background-color", "#0CF72B");
           }, flashInterval);
           break;
         case 2:
           $(red).css("background-color", "white");
           setTimeout(function(){
-            $(red).css("background-color", "red");
+            $(red).css("background-color", "#FF0000");
           }, flashInterval);
           break;
         case 3:
           $(yellow).css("background-color", "white");
           setTimeout(function(){
-            $(yellow).css("background-color", "yellow");
+            $(yellow).css("background-color", "#EEFF00");
           }, flashInterval);
           break;
         case 4:
           $(blue).css("background-color", "white");
           setTimeout(function(){
-            $(blue).css("background-color", "blue");
+            $(blue).css("background-color", "#0050FF");
           }, flashInterval);
           break;
         };
