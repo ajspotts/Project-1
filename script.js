@@ -86,7 +86,7 @@ $('.panel').on('click', function() {
     if (arraysCorrect) {
       flashCount++;
       flashInterval -= 200;
-      flashLength -= 200;
+      flashLength -= 400;
       alert('Correct')
     } else {
     // Else do not continue and reset to beginning
@@ -95,10 +95,19 @@ $('.panel').on('click', function() {
       flashLength = FLASH_LENGTH_DEFAULT;
       alert('Incorrect, starting over')
     }
+    setTimeout(goToNextLevel, 1000)
+
 
 
   }
 });
+
+var goToNextLevel = function() {
+  randomFlashingPattern=[];
+  userClickedPattern=[];
+  generatePattern();
+  displayPattern();
+};
 
 $('button').on('click', function() {
   randomFlashingPattern=[];
